@@ -1,0 +1,153 @@
+.dd {
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+.dd ul{
+  list-style: none;
+}
+
+.DropDown {
+    position: relative;
+    border: none;
+    float: left;
+    width: auto;
+    margin: 50px 10px;
+    outline: none;
+    padding-right: 8px;
+  }
+
+  
+  .DropDown:after {
+      content: '\f078';
+      font: normal normal normal 17px/1 FontAwesome;
+      color: black;
+      right: 11px;
+      top: 8px;
+      height: 34px;
+      padding: 15px 0px 0px 8px;
+      position: absolute;
+      pointer-events: none;
+      border: none;
+  }
+  
+  /* IE11 hide native button (thanks Matt!) */
+  select::-ms-expand {
+  display: none;
+  }
+
+  .dropdown-container.active {
+    transition: border-width .2s ease-in-out;
+}
+
+.dropdown-container {
+  border-bottom: 0 solid #fff;
+}
+
+.dd ul li .dropdown-container.active .nav-link {
+  color: rgba(0,0,0,.7);
+  font-weight: 500;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+.dd ul li .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(0,0,0,.7);
+  -webkit-opacity: .7;
+  -moz-opacity: .7;
+  -o-opacity: .7;
+  opacity: .7;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 22px;
+  line-height: normal;
+}
+
+.dropdown-container .sublink-container {
+  display: none;
+  height: auto;
+  width: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,.22);
+  -moz-box-shadow: 0 4px 5px 0 rgba(0,0,0,.22);
+  -o-box-shadow: 0 4px 5px 0 rgba(0,0,0,.22);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.22);
+  white-space: nowrap;
+}
+
+.dropdown-container:hover .sublink-container{
+  display: block;
+}
+
+.slide-up {
+  -webkit-animation: slideup .3s,hs-fadeIn .3s;
+  -moz-animation: slideup .3s,hs-fadeIn .3s;
+  -o-animation: slideup .3s,hs-fadeIn .3s;
+  animation: slideup .3s,hs-fadeIn .3s;
+}
+
+.dropdown-container.active .dropdown-link {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+.dropdown-container .sublink-container .dropdown-link {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  text-transform: none;
+  color: #313131;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  text-decoration: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+/* .DropDown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;    
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  -ms-word-break: normal;
+  word-break: normal;
+  border: none;
+  outline: none;
+  list-style-type: none;
+}
+
+.DropDown select option {
+  border: white;
+  outline: none;
+  background: white;
+  
+}
+
+.DropDown select option::selection{
+    background: rgb(238, 233, 233)
+} */
